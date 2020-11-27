@@ -1,0 +1,112 @@
+html {
+	box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+  position: relative;
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 17px;
+  color: $text;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+button:focus,
+input:focus {
+	outline: transparent;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.--just-space {
+	justify-content: space-between;
+}
+
+.--just-end {
+	justify-content: flex-end;
+}
+
+.--align-str {
+	align-items: stretch;
+}
+
+.--align-center {
+	align-items: center;
+}
+
+.--align-end {
+	align-items: flex-end;
+}
+
+.container {
+  max-width: 1199px;
+  margin: 0 auto;
+}
+.subtitle,
+.title,
+.btn {
+  font-weight: 700;
+}
+.subtitle {
+  color: $subtitle;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.title {
+  font-family: "PlayfairDisplay";
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 300;
+  &__italic {
+    font-style: italic;
+  }
+}
+.text {
+  color: $grey-text;
+  line-height: 25px;
+}
+.btn {
+  background-color: $btn_bg;
+  border-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 20px;
+  cursor: pointer;
+  outline-color: $btn_hover;
+  &:hover {
+    background-color: $btn_hover;
+    transition: all ease 0.4s;
+  }
+}

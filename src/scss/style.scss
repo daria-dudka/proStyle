@@ -1,0 +1,447 @@
+@import 'mixins';
+@import 'vars';
+@import 'fonts';
+@import 'local-fonts';
+@import 'global';
+@import 'svg';
+@import 'bem-blocks';
+
+
+// start header
+
+.header {
+  background-color: $grey-bg;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    margin-top: 12px;
+    z-index: 1;
+  }
+  &__content {
+    display: flex;
+    z-index: 1;
+  }
+  &__date {
+    margin-bottom: 6px;
+    & span {
+      margin-right: 20px;
+    }
+  }
+  &__btn {
+    margin-left: 113px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $btn_bg;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 37px;
+    border-bottom: 1px solid $btn_bg;
+    &:hover {
+      color: $btn_hover;
+      border-color: $btn_bg;
+      transition: all ease 0.2s;
+    }
+  }
+  &__info {
+    font-size: 14px;
+  }
+  &__phone-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  &__title {
+    color: $grey;
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 16px;
+  }
+}
+.jq-checkbox {
+  border-color: 1px solid $grey;
+  border-radius: 0;
+  box-shadow: none;
+  background: $grey-bg;
+}
+.jq-checkbox.focused,
+.jq-checkbox:hover {
+  border-color: $btn_bg;
+}
+.jq-checkbox.checked .jq-checkbox__div {
+  width: 8px;
+  height: 6px;
+  margin: 3px 0 0 3px;
+  border-bottom: 2px solid $btn_bg;
+  border-left: 2px solid $btn_bg;
+  transform: rotate(-50deg);
+}
+.jq-checkbox.checked {
+  border-color: $btn_bg;
+}
+
+// end header
+// start reservation
+
+.reservation {
+  background-color: $grey-bg;
+  height: 99vh;
+  position: relative;
+  margin-top: -75px;
+  background-image: url(../img/reservation_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 54%;
+  background-size: contain;
+  &__inner {
+    display: flex;
+    padding: 210px 0 280px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__info {
+    max-width: 470px;
+  }
+  &__form {
+    max-width: 315px;
+    margin-top: 45px;
+  }
+}
+.info {
+  &__title {
+    padding: 31px 0 31px 0;
+  }
+  &__text {
+    max-width: 420px;
+  }
+}
+.form {
+  &__title {
+    font-family: "PlayfairDisplay";
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 21px;
+  }
+  &__input {
+    border: 1px solid $grey;
+    background-color: $grey-bg;
+    width: 100%;
+    padding: 18px 16px;
+    margin: 16px 0 0 0;
+    color: $text;
+    text-transform: uppercase;
+    &::placeholder {
+      color: $grey;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &:focus,
+    &:hover {
+      border-color: $text;
+    }
+  }
+  &__btn {
+    width: 100%;
+    margin-top: 35px;
+  }
+  &__checkbox_label {
+    display: inline;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 16px;
+  }
+  &__phone {
+    display: none;
+  }
+  &__email {
+    margin-bottom: 16px;
+  }
+}
+
+// end reservation
+// start webinar-points
+
+.webinar-points {
+  padding: 158px 0 187px 0;
+  background: linear-gradient(to bottom, $pink-bg 59%, #ffffff 41%);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    max-width: 390px;
+    padding: 20px 0 90px 0;
+    line-height: 60px;
+  }
+  &__images {
+    position: relative;
+    display: grid;
+    grid-template-columns: 316.66px 147.34px 109px;
+    grid-template-rows: 213px 400.6px 46.94px;
+    &::before {
+      content: url('../img/section_1.svg');
+      position: absolute;
+      top:-34.5px;
+      left: 64px;
+      z-index: 3;
+    }
+  }
+  &__img:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 660px;
+  }
+  &__img:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    height: 400px;
+  }
+  &__list {
+    max-width: 500px;
+    padding-top: 57px;
+    margin-top: -248px;
+  }
+  &__list-item {
+    list-style: none;
+    background: url(../img/star.svg) 0 10%/24px no-repeat;
+    padding-left: 40px; 
+    padding-bottom: 24px;
+    line-height: 24px;
+  }
+  &__request {
+    padding: 221px 0 0 60px;
+    max-width: 485px;
+  }
+}
+.request {
+  &__title {
+    font-family: "PlayfairDisplay";
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    padding-bottom: 34px;
+  }
+  &__btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 32px;
+  }
+}
+
+// end webinar-points
+// start solve-questions
+
+.solve-questions {
+  padding-bottom: 187px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__images {
+    padding-top: 43px;
+    display: grid;
+    grid-template-columns: 117.38px 144px 74px 133px 105px; 
+    grid-template-rows: 60px 150px 74px 134px 86px 129px 49px;
+    position: relative;
+    &::before {
+      content: url('../img/section_2.svg');
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+  &__image-item:nth-child(1){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    z-index: 2;
+    height: 210px;
+  }
+  &__image-item:nth-child(2){
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    z-index: 2;
+    height: 358px;
+  }
+  &__image-item:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    height: 349px;
+  }
+  &__image-item:nth-child(4){
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    z-index: 2;
+    height: 178px;
+  }
+  &__list {
+    max-width: 470px;
+    margin-top: -110px;
+  }
+  &__list-item {
+    list-style: none;
+    padding: 25px 10px 26px 47px;
+    border-top: 1px solid $subtitle;
+    background: url(../img/arrow.svg) 0 50%/23px no-repeat;
+  }
+  &__title {
+    max-width: 615px;
+    margin-bottom: 40px;
+  }
+}
+
+// end solve-questions
+// start aboutme
+.aboutme {
+  padding-bottom: 200px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    max-width: 255px;
+  }
+  &__subtitle {
+    padding-bottom: 27px;
+  }
+  &__author-wrapper {
+    position: relative;
+    margin-top: -16px;
+    z-index: -1;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 40px solid transparent; border-top: 40px solid #fff; border-right: 40px solid #fff;
+    }
+    &::after {
+      content: url('../img/section_3.svg');
+      position: absolute;
+      bottom: -25px;
+      left: 45px;
+      z-index: 1;
+    }
+  }
+  &__author-image {
+    height: 802px;
+  }
+  &__author-info {
+    max-width: 455px;
+    padding-top: 147px;
+  }
+  &__slogan {
+    margin-bottom: 70px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    position: relative;
+    &::before {
+      content: '';
+      width: 46px;
+      height: 196px;  
+      position: absolute;
+      top: -56px;
+      left: 171px;
+      background-color: $pink-bg;
+      transform: rotate(-54.07deg);
+      z-index: -1;
+    }
+  }
+  &__request {
+    padding: 78px 0 0 0;
+  }
+}
+.achievements-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 320px;
+  &__item {
+    padding-bottom: 32px;
+  }
+  &__span {
+    color: $subtitle;
+    display: block;
+  }
+  &__span--inline {
+    display: inline-block;
+  }
+}
+// end aboutme
+// start footer
+.footer {
+  background-color: $text;
+  padding: 124px 0 13px 0;
+  &__top,
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__top {
+    padding-bottom: 113px;
+    font-size: 14px;
+    line-height: 21px;
+    color: $grey;
+    align-items: start;
+  }
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+  &__list-item + .footer__list-item {
+    padding-top: 16px;
+  }
+  &__link {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__phone {
+    padding-bottom: 35px;
+    line-height: 22px;
+  }
+  &__contacts-link {
+    color: $btn_bg;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color: $btn_hover;
+      text-decoration: underline;
+      text-decoration-color: $btn_hover;
+      transition: all ease 0.2s;
+    }
+  }
+  &__contacts-link + .footer__contacts-link {
+    padding-left: 24px;
+  }
+  &__text {
+    font-size: 10px;
+    line-height: 16px;
+    color: $grey-text;
+  }
+  &__email {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+}
+
+// end footer
+
+
+
+
+
+@import'media';
