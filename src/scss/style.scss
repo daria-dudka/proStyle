@@ -239,7 +239,18 @@
   padding-bottom: 187px;
   &__inner {
     display: flex;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    height: 900px;
+    &::before,
+    &::after {
+      content: "";
+      flex-basis: 100%;
+      width: 0;
+      order: 2;
+    }
+  }
+  &__photo {
+    order: 1;
   }
   &__images {
     padding-top: 43px;
@@ -282,8 +293,10 @@
     height: 178px;
   }
   &__list {
+    order: 2;
     max-width: 470px;
-    margin-top: -110px;
+    padding-top: 15px;
+    line-height: 24px;
   }
   &__list-item {
     list-style: none;
@@ -292,6 +305,7 @@
     background: url(../img/arrow.svg) 0 50%/23px no-repeat;
   }
   &__title {
+    order: 1;
     max-width: 615px;
     margin-bottom: 40px;
   }

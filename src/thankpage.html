@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Pro Style'
+})
+
+<body>
+  
+  <main class="main">
+
+    <section id="reservation" class="reservation">
+      <div class="container">
+        <div class="reservation__inner">
+          <div class="reservation__info info">
+            <h5 class="info__subtitle subtitle">
+              Онлайн мастер-класс
+            </h5>
+            <h1 class="info__title title">
+              Как выглядеть <span class="title__italic">стильно и дорого</span> при минимальном бюджете
+            </h1>
+            <p class="info__text text">
+              Сразу после мастер-класса вы наведете порядок в своем гардеробе, и он станет для вас любимым
+            </p>
+          </div>
+          <form class="reservation__form form">
+            <h3 class="form__title">
+              Забронируйте ваше участие сейчас
+            </h3>
+            <input class="form__email form__input" type="email" placeholder="E-mail">
+            <div class="form__wrapper">
+              <input id="checkbox_phone" class="form__checkbox checkbox" type="checkbox">
+              <label for="checkbox_phone">
+                <p class="form__checkbox_label">
+                  Напомнить по SMS
+                </p>
+              </label>
+              <input id="form__phone" class="form__phone form__input" type="phone"
+                placeholder="+38 (___) ___ - __ - __">
+            </div>
+            <button class="form__btn btn btn_participation" type="submit">
+              Принять участие
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+  @@include('components/page/_3_footer.html')
+  @@include('components/page/_4_scripts.html')
+</body>
