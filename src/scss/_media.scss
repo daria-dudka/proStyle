@@ -272,7 +272,56 @@
       text-align: center;
     }
   }
-  
+  .webinar-points {
+    padding: 48px 0 96px;
+    background: linear-gradient(to bottom,#fdfaf7 76%,#fff 24%);
+    &__inner {
+      display: flex;
+      flex-direction: column;
+    }
+    &__images-wrapper {
+      order: -1;
+    }
+    &__images {
+      grid-template-columns: 173px 48.55px 124.45px;
+      grid-template-rows: 97px auto 18px;
+      &::before {
+        content: url('../img/section_1tablet.png');
+        position: absolute;
+        top: -179.5px;
+        left: -121px;
+        transform: rotate(2deg) scale(0.61);
+        z-index: 3;
+      }
+    }
+    &__img:nth-child(1) {
+      height: 309px;
+    }
+    &__img:nth-child(2) {
+      height: 194px;
+    }
+    &__title-wrapper {
+      padding-top: 63px;
+    }
+    &__title {
+      padding-bottom: 0;
+    }
+    &__list {
+      padding: 24px 0 0;
+    }
+    &__request {
+      padding: 32px 0 0;
+    }
+  }
+  .request {
+    text-align: center;
+    margin: 0 auto;
+    &__title {
+      font-size: 20px;
+      max-width: 266px;
+      margin: 0 auto;
+    }
+  }
   .footer {
     padding-top: 74px;
     &__top {
