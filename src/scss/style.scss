@@ -66,6 +66,9 @@
     font-weight: 500;
     padding-right: 16px;
   }
+  &__reservation-btn {
+    display: none;
+  }
 }
 .jq-checkbox {
   border-color: 1px solid $grey;
