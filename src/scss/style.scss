@@ -172,8 +172,10 @@
     grid-template-columns: 60.8333333% 39.1666667%;
     grid-template-rows: auto 333px 327px;
   }
-  &__title {
+  &__title-wrapper {
     grid-column: 1 / 2;
+  }
+  &__title {
     padding: 20px 0 90px 0;
     line-height: 60px;
   }
@@ -319,11 +321,10 @@
 // end solve-questions
 // start aboutme
 .aboutme {
-  padding-bottom: 200px;
   &__inner {
     display: grid;
     grid-template-columns: 45.9166667% 14.9166667% 39.1666667%;
-    grid-template-rows: 729px 210px;
+    grid-template-rows: 63.041916% 17.958084%;
   }
   &__title {
     max-width: 255px;
@@ -355,6 +356,7 @@
   }
   &__author-image {
     height: auto;
+    max-width: 554px;
     width: 100%;
     object-fit: cover;
   }
