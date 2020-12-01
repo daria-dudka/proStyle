@@ -78,6 +78,10 @@ h5 {
 .btn {
   font-weight: 700;
 }
+.subtitle,
+.btn {
+  letter-spacing: 0.1em;
+}
 .subtitle {
   color: $subtitle;
   font-size: 12px;

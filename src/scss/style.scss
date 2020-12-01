@@ -145,6 +145,9 @@
     &:hover {
       border-color: $text;
     }
+    &:invalid {
+      border-color: $input-err;
+    }
   }
   &__btn {
     width: 100%;
@@ -488,16 +491,6 @@
   &__info {
     display: flex;
   }
-  &__date {
-    font-size: 20px;
-    line-height: 30px;
-    position: relative;
-    &::before {
-      content: url(../img/date-elipse.svg);
-      position: absolute;
-      top: -20px;
-    }
-  }
   &__phone {
     margin-left: 215px;
   }
@@ -509,6 +502,16 @@
     align-items: center;
     text-align: left;
     max-width: 529px;
+  }
+}
+.date {
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  &::before {
+    content: url(../img/date-elipse.svg);
+    position: absolute;
+    top: -20px;
   }
 }
 .main-content {

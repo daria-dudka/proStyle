@@ -21,7 +21,7 @@
         </div>
       </div>
       <div id="reservation" class="header__reservation reservation">
-        <a href="#reservation" class="header__reservation-btn request__btn btn">
+        <a id="reservation-btn" href="#reservation" class="header__reservation-btn request__btn btn">
           Принять участие
         </a>
         <div class="reservation__inner">
@@ -49,7 +49,7 @@
                   Напомнить по SMS
                 </p>
               </label>
-              <input id="form__phone" class="form__phone form__input" type="phone"
+              <input id="form__phone" class="form__phone form__input" type="phone"  pattern="^[0-9]+$"
                 placeholder="+38 (___) ___ - __ - __">
             </div>
             <button class="form__btn btn btn_participation" type="submit">

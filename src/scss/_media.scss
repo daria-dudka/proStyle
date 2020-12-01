@@ -18,7 +18,7 @@
 //!MEDIA: 1227
 
 //MEDIA: 1080
-@media (min-width: 768px) and (max-width: 1080px) {
+@media (min-width: 761px) and (max-width: 1080px) {
   .header {
     &__inner {
       height: auto;
@@ -30,6 +30,14 @@
     }
     &__btn {
       margin-left: 56px;
+    }
+  }
+  .header-thankpage {
+    &__top {
+      background-color: transparent;  
+    }
+    &__main-content {
+      margin-top: 20px;
     }
   }
   .reservation {
@@ -203,7 +211,7 @@
 //!MEDIA: 1080
 
 //MEDIA: 768
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   body {
     font-size: 14px;
   }
@@ -211,6 +219,7 @@
     background-image: url(../img/reservation-bg_mob.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position-y: -49px;
     &__inner {
       height: auto;
       background-image: none;
@@ -222,10 +231,15 @@
       text-align: right;
     }
     &__reservation-btn.request__btn {
-      display: block;
+      display: none;
+      position: fixed;
+      width: 90%;
       padding: 12px 42px;
       text-align: center;
     }
+  }
+  .header-thankpage {
+    background: $darkgrey-bg;
   }
   .logo__img {
     width: 77px;
@@ -236,7 +250,7 @@
       align-items: center;
       text-align: center;
       position: relative;
-      padding: 80px 0 58px;
+      padding: 32px 0 58px;
     }
     &__info {
       max-width: none;
@@ -271,10 +285,13 @@
       padding: 16px 42px;
       text-align: center;
     }
+    &__input {
+      margin: 14px 0 15px;
+    }
   }
   .webinar-points {
     padding: 48px 0 96px;
-    background: linear-gradient(to bottom,#fdfaf7 76%,#fff 24%);
+    background: linear-gradient(to bottom,#fdfaf7 78%,#fff 22%);
     &__inner {
       display: flex;
       flex-direction: column;
@@ -318,15 +335,16 @@
     margin: 0 auto;
     &__title {
       font-size: 20px;
-      max-width: 286px;
+      max-width: 257px;
       margin: 0 auto;
+      padding-bottom: 19px;
     }
     &__btn {
       padding: 16px 40px;
     }
   }
   .solve-questions {
-    padding-bottom: 96px;
+    padding-bottom: 53px;
     &__inner {
       display: flex;
       flex-direction: column;
@@ -395,7 +413,10 @@
       }
     }
     &__request {
-      padding: 48px 0 96px;
+      padding: 11px 0 53px;
+    }
+    &__subtitle {
+      padding-bottom: 20px;
     }
     .title__italic {
       display: block;
