@@ -17,8 +17,8 @@
 }
 //!MEDIA: 1227
 
-//MEDIA: 1080
-@media (min-width: 761px) and (max-width: 1080px) {
+//MEDIA: 1086
+@media (min-width: 761px) and (max-width: 1086px) {
   .header-subscribepage {
     &__inner {
       height: auto;
@@ -30,14 +30,6 @@
     }
     &__btn {
       margin-left: 56px;
-    }
-  }
-  .header-thankpage {
-    &__top {
-      background-color: transparent;  
-    }
-    &__main-content {
-      margin-top: 20px;
     }
   }
   .reservation {
@@ -206,9 +198,63 @@
       text-align: center;
     }
   }
+  .header-thankpage {
+    &__inner {
+      background-position-y: 98px;
+      background-position-x: -150px;
+      padding-right: 15px;
+    }
+    &__top {
+      background-color: transparent;  
+    }
+    &__main-content {
+      margin-top: 20px;
+    }
+    &__info {
+      width: 62%;
+    }
+  }
+  .main-content {
+    &__request {
+      padding-bottom: 40px;
+    }
+    &__text {
+      max-width: 327px;
+      padding-bottom: 72px;
+      margin: 0 auto 0 0;
+    }
+    &__title {
+      padding-top: 75px;
+      padding-bottom: 23px;
+    }
+    &__social {
+      padding-bottom: 194px;
+    }
+  }
+  .idealbag {
+    padding: 80px 0 80px;
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__course-info {
+      padding-top: 38px;
+    }
+    &__course-video {
+      order: -1;
+    }
+    &__course-video-link {
+      width: 720px;
+      height: 404px;
+    }
+    &__price {
+      padding-bottom: 55px;
+    }
+  }
 }
 
-//!MEDIA: 1080
+//!MEDIA: 1086
 
 //MEDIA: 760
 @media screen and (max-width: 760px) {
@@ -232,15 +278,6 @@
       height: auto;
       background-image: none;
     }
-  }
-  .scroll-btn {
-    display: none;
-    text-decoration: none;
-    position: fixed;
-    width: 90%;
-    padding: 12px 42px;
-    text-align: center;
-    z-index: 10;
   }
   .header-thankpage {
     background: $darkgrey-bg;
@@ -460,5 +497,90 @@
       flex-direction: column-reverse;
     }
   }
+  .header-thankpage {
+    &__inner {
+    background-position-y: 98px;
+    background-position-x: 174px;
+    padding-right: 15px;
+    padding-bottom: 37px;
+    }
+    &__main-content {
+      margin: 0 auto 0 0;
+      padding: 30px 0 0 15px;
+    }
+    &__date {
+      font-size: 16px;
+      &::before {
+        top: -27px;
+        left: -8px;
+        transform: scale(0.5);
+      }
+    }
+    &__phone {
+    display: none;
+    }
+  }
+  .main-content {
+    align-items: baseline;
+    &__text,
+    &__title {
+      max-width: 205px;
+    }
+    &__title {
+      padding-bottom: 16px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 700;
+      padding-bottom: 46px;
+    }
+    &__btn {
+      padding: 16px 32px;
+    }
+    &__request {
+      padding-bottom: 0;
+      margin: 0 0 auto;
+    }
+    &__request-title {
+      max-width: 205px;
+      margin: 0 0 auto;
+      text-align: left;
+    }
+    &__social {
+      padding-bottom: 37px;
+    }
+    &__next-btn {
+      margin-right: 90%;
+    }
+  }
+  .idealbag {
+    padding: 48px 0 96px;
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__course-info {
+      padding-top: 32px;
+    }
+    &__course-video {
+      order: -1;
+    }
+    &__course-video-link {
+      width: 343px;
+      height: 192px;
+    }
+    &__price {
+      padding-bottom: 55px;
+    }
+    &__text {
+      color: $text;
+      font-size: 14px;
+      line-height: 21px;
+      color: $light-text;
+    }
+  }
+  
 }
 //!MEDIA: 760

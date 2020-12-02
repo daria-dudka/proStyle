@@ -75,6 +75,12 @@
 }
 .scroll-btn {
   display: none;
+  text-decoration: none;
+  position: fixed;
+  width: 90%;
+  padding: 12px 42px;
+  text-align: center;
+  z-index: 5;
 }
 .jq-checkbox {
   border-color: 1px solid $grey;
@@ -488,15 +494,15 @@
     background-image: url(../img/thankpage-bg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position-x: 160px;
   }
   &__top {
     justify-content: space-between;
   }
   &__info {
     display: flex;
-  }
-  &__phone {
-    margin-left: 215px;
+    justify-content: space-between;
+    width: 50%;
   }
   &__main-content {
     margin-top: 160px;
@@ -577,6 +583,8 @@
   }
   &__text {
     color: $text;
+    font-size: 20px;
+    line-height: 30px;
   }
   &__price {
     padding-bottom: 40px;
@@ -593,7 +601,10 @@
   &__btn {
     padding: 20px 37px;
   }
-
+  &__course-video-link {
+    width: 627px;
+    height: 352px;
+  }
 }
 
 //end idealbag
