@@ -14,18 +14,21 @@ $(function() {
   document.getElementById('checkbox_phone').onchange = toggle
   ;
 
+  var position = $(window).scrollTop();
 
-  
-  $(window).on('mousewheel', function(event) {
-    const scrollBtn = document.getElementById('scroll-btn');
-    const width = $(window).width();
-    if (event.originalEvent.wheelDelta >= 0 && width <= 760 ) {
-      scrollBtn.style.display = 'block';
-    }
-    else {
-      scrollBtn.style.display = 'none';
-    }
+  $(window).on('scroll', () => {
+      let scroll = $(window).scrollTop();
+      const scrollBtn = document.getElementById('scroll-btn');
+      const width = $(window).width();
+
+      if (scroll < position && width < 760) {
+        scrollBtn.style.display = 'block';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+      position = scroll;
     });
+
 
 });
 

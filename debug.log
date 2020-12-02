@@ -11,3 +11,4 @@
 [1130/092604.686:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\dsvir\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\a23d45db-4484-48a6-af8d-6f97e0b99b43: Системе не удается найти указанный путь. (0x3)
 [1130/092604.686:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1201/102850.292:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1202/101440.244:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
