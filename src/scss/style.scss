@@ -8,16 +8,9 @@
 
 
 // start header
-
 .header {
-  background-color: $grey-bg;
   &__inner {
     height: 100vh;
-    position: relative;
-    background-image: url(../img/reservation_bg.jpg);
-    background-repeat: no-repeat;
-    background-position: 54%;
-    background-size: contain;
   }
   &__top {
     display: flex;
@@ -69,6 +62,19 @@
   &__reservation-btn.request__btn {
     display: none;
   }
+}
+.header-subscribepage {
+  background-color: $grey-bg;
+  &__inner {
+    position: relative;
+    background-image: url(../img/reservation_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 54%;
+    background-size: contain;
+  }
+}
+.scroll-btn {
+  display: none;
 }
 .jq-checkbox {
   border-color: 1px solid $grey;
@@ -477,13 +483,11 @@
 // end footer
 // start header-thankpage
 .header-thankpage {
-  height: 100vh;
   background-color: $darkgrey-bg;
   &__inner {
     background-image: url(../img/thankpage-bg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
   }
   &__top {
     justify-content: space-between;

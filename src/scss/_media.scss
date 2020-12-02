@@ -19,7 +19,7 @@
 
 //MEDIA: 1080
 @media (min-width: 761px) and (max-width: 1080px) {
-  .header {
+  .header-subscribepage {
     &__inner {
       height: auto;
       background-position: 4%;
@@ -210,33 +210,37 @@
 
 //!MEDIA: 1080
 
-//MEDIA: 768
+//MEDIA: 760
 @media screen and (max-width: 760px) {
   body {
     font-size: 14px;
   }
   .header {
-    background-image: url(../img/reservation-bg_mob.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: -49px;
-    &__inner {
-      height: auto;
-      background-image: none;
-    }
     &__btn {
       display: none;
     }
     &__info {
       text-align: right;
     }
-    &__reservation-btn.request__btn {
-      display: none;
-      position: fixed;
-      width: 90%;
-      padding: 12px 42px;
-      text-align: center;
+  }
+  .header-subscribepage {
+    background-image: url(../img/reservation-bg_mob.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: -42px;
+    &__inner {
+      height: auto;
+      background-image: none;
     }
+  }
+  .scroll-btn {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    width: 90%;
+    padding: 12px 42px;
+    text-align: center;
+    z-index: 10;
   }
   .header-thankpage {
     background: $darkgrey-bg;
@@ -250,7 +254,7 @@
       align-items: center;
       text-align: center;
       position: relative;
-      padding: 32px 0 58px;
+      padding: 42px 0 58px;
     }
     &__info {
       max-width: none;
@@ -457,5 +461,4 @@
     }
   }
 }
-
-//!MEDIA: 768
+//!MEDIA: 760
