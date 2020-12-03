@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Pro Style'
+})
+
+<body>
+  <header id="header" class="header-freevideo">
+    <div class="container">
+      <div class="header-freevideo__inner">
+        <div class="header-freevideo__watch-lesson watch-lesson">
+          <h5 class="watch-lesson__subtitle subtitle">
+            Урок #1
+          </h5>
+          <h1 class="watch-lesson__title title">
+            Как выбрать идеальную сумку
+          </h1>
+          <a href="#" class="watch-lesson__link">
+            Смотреть урок №1
+          </a>
+        </div>
+        <div class="header-freevideo__download-book download-book">
+          <h5 class="download-book__subtitle subtitle">
+            Бонус
+          </h5>
+          <h3 class="download-book__form-title form-title">
+            Как выбрать и сочетать украшения, которые идут лично вам
+          </h3>
+          <a href="#" class="download-book__btn btn">
+            Скачать книгу
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="early-list">
+      <div class="container">
+        <div class="early-list__inner">
+          <div class="early-list__top">
+            <div class="early-list__info">
+              <h5 class="early-list__date">
+                22 ноября, 19:00
+              </h5>
+              <h2 class="early-list__title title">
+                Стартует курс <span class="title__italic early-list__title-italic">“Сам себе стилист”</span>
+              </h2>
+              <p class="early-list__text">
+                В этом курсе собраны ответы на все самые распространенные женские вопросы, связанные с внешним видом,
+                стилем, желанием красиво и эффектно одеваться.
+              </p>
+            </div>
+            <div class="early-list__images">
+              <img class="early-list__image" src="img/early-list-1.jpg" alt="style">
+              <img class="early-list__image" src="img/early-list-2.jpg" alt="style">
+              <img class="early-list__image" src="img/early-list-3.jpg" alt="style">
+            </div>
+          </div>
+          <form class="early-list__form form">
+            <div class="early-list__form-text">
+              <h5 class="early-list__subtitle subtitle">
+                заполните форму раннего списка
+              </h5>
+              <h3 class="early-list__form-title form-title">
+                Успейте первым подключиться в лимитированную группу и узнайте о лучших условиях набора
+              </h3>
+            </div>
+            <div class="early-list__form-wrapper">
+              <input class="early-list__form-input form__input" type="text" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+              <input class="early-list__form-input form__input" type="email" placeholder="E-mail">
+              <input class="early-list__form-input form__input" type="tel" placeholder="Номер телефона"
+                pattern="^[0-9]+$">
+              <button class="early-list__btn btn" type="submit">
+                Узнать первым
+              </button>
+            </div>
+          </form>
+
+
+
+        </div>
+    </section>
+
+  </main>
+  @@include('components/page/_3_footer.html')
+  @@include('components/page/_4_scripts.html')
+</body>
